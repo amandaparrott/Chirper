@@ -54,9 +54,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <form>
-          <div className="form-group">
-            <label>Username</label>
+        <form className="d-flex justify-content-center align-items center">
+          <div className="form-group col col-6 shadow-lg border border-info rounded mt-3 text-center">
+            <label className="font-weight-bolder">Username</label>
             <input
               type="text"
               className="form-control"
@@ -65,7 +65,7 @@ class App extends React.Component {
               onChange={(e) => this.handleUserChange(e)}
             ></input>
             <div className="form-group">
-              <label for="formGroupExampleInput2">Chirp</label>
+              <label className="font-weight-bolder">Chirp</label>
               <input
                 type="text"
                 className="form-control"
@@ -75,7 +75,7 @@ class App extends React.Component {
               ></input>
             </div>
             <button
-              className="btn btn-outline-primary btn-block w-50 mx-auto shadow-sm"
+              className="btn btn-info btn-block w-50 mx-auto shadow-sm mb-2"
               onClick={e => this.handleClick(e)}
             >
               Chirp Chirp Bro!
